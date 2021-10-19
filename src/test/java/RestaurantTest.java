@@ -39,12 +39,12 @@ class RestaurantTest {
     }
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    
+
     //<<<<<<<<<<<<<<<<<<<<<<<<<Total Cost>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     @Test
     public void selected_items_from_menu_display_total_cost_of_selected_items(){
         List<String> itemsSelected = new ArrayList<>();
-        System.out.println(restaurant.getMenu());
+        //System.out.println(restaurant.getMenu());
         itemsSelected.add(restaurant.getMenu().get(0).getName());
         itemsSelected.add(restaurant.getMenu().get(0).getName());
         int totalSelectedItemCost = restaurant.totalCartCost(itemsSelected);
